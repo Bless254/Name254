@@ -1,0 +1,23 @@
+'''python
+def second_largest(nums):
+    unique_nums = list(set(nums))  # Remove duplicates
+    if len(unique_nums) < 2:
+        return None  # Not enough unique numbers
+    unique_nums.sort(reverse=True)
+    return unique_nums[1]
+```
+
+*Explanation:*
+1. *`set(nums)`* removes duplicates to handle repeated max values.
+2. If the list has *fewer than 2 unique values*, we return `None`.
+3. *Sort* the unique numbers in *descending order*.
+4. Return the *second item*, which is the second-largest.
+
+*Example usage:*
+```python
+print(second_largest([4, 1, 7, 7, 3]))  # Output: 4
+print(second_largest([9]))             # Output: None
+```
+
+
+
