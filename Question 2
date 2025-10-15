@@ -1,0 +1,24 @@
+*1. Large Images*
+- *Cause:* Uncompressed or high-resolution images increase load time.
+- *Fix:*  
+  - Compress images using tools like TinyPNG or WebP format.  
+  - Use responsive images (e.g., different sizes for mobile/desktop).  
+  - Implement lazy loading to load images only when they appear in view.
+
+---
+
+*2. Too Many HTTP Requests*
+- *Cause:* Each file (CSS, JS, images, fonts) sends a separate request.
+- *Fix:*  
+  - Minify and combine CSS/JS files.  
+  - Use icon fonts or SVGs instead of multiple images.  
+  - Enable browser caching to reduce repeated loads.
+
+---
+
+*3. Unoptimized JavaScript or CSS*
+- *Cause:* Large or blocking scripts delay rendering.
+- *Fix:*  
+  - Minify and defer JavaScript.  
+  - Load non-critical CSS asynchronously.  
+  - Remove unused CSS with tools like PurgeCSS.
