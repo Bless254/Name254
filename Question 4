@@ -1,0 +1,21 @@
+```javascript
+function calculateTotalSales(data) {
+  return data.reduce((total, item) => {
+    return total + item.price * item.quantity;
+  }, 0);
+}
+
+// Example dataset
+const salesData = [
+  { item: "Pen", price: 20, quantity: 3 },
+  { item: "Book", price: 200, quantity: 2 },
+  { item: "Bag", price: 800, quantity: 1 }
+];
+
+console.log("Total Revenue:", calculateTotalSales(salesData)); // Output: 1240
+```
+
+*Explanation:*
+- Uses `reduce()` to iterate through the array.
+- Multiplies `price × quantity` for each item.
+- Adds it to the running total.
